@@ -14,6 +14,7 @@ def load_csv(filename):
     """Load a Numpy array from a CSV
 
     :param filename: Filename of CSV to load
+    :returns: Table of all values in the csv
     """
     return np.loadtxt(fname=filename, delimiter=',')
 
