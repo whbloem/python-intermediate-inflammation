@@ -13,7 +13,7 @@ def main(args):
     - selecting the necessary models and views for the current task
     - passing data between models and views
     """
-    
+
     InFiles = args.infiles
     if not isinstance(InFiles, list):
         InFiles = [args.infiles]
@@ -28,6 +28,7 @@ def main(args):
             }
 
         views.visualize(view_data)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
